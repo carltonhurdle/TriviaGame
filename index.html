@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game</title>
+<!-- Link to the CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!-- Link to Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Barrio|Caveat+Brush" rel="stylesheet">
+
+<!-- Link to JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+
+</script>
+</head>
+<body>
+
+
+<!-- Start a main container -->
+<div id="mainContainer">
+
+
+<!-- Start the container for the Splash Page -->	
+<!-- try using the JQuery first for the main splash page --> 
+<div id="mainSplash"> 
+	<h1>Steven Universe Challenge</h1>
+	<hr>
+	<img src="assets/images/stevenuniversesplash.jpg" width="400" id="stevenSplash">
+	<p>
+	<button id="button">START</button>
+	</p>
+<!-- End the container for the Splash Page -->		
+</div>
+
+
+
+
+
+<!-- ************************************* -->
+
+
+
+
+<!-- Start the container for the Quiz Page -->	
+<div id="mainQuiz" style="display:none;">
+<form id="quizPage">
+<h1>Steven Universe Challenge</h1>
+<p>
+	
+
+<!-- Start the CountDown -->	
+
+    <div id="time-left"></div>
+
+<!-- End the Countdown -->	
+
+
+
+
+</p>
+<hr>
+<!-- Start the Questions -->
+<p class="questionNum">Question 1</p>
+Out of the current main team of Gems, who was the second member of the Crystal Gems?
+<p>
+<input type="radio" name="question1a" value="Garnet"> 
+&nbsp; Garnet &nbsp;
+<input type="radio" name="question1a" value="Pearl">
+&nbsp; Pearl &nbsp;
+<input type="radio" name="question1a" value="Amethyst">
+&nbsp; Amethyst &nbsp;
+<input type="radio" name="question1a" value="Lapis">
+&nbsp; Lapis &nbsp;
+</p>
+
+
+<p class="questionNum">Question 2</p>
+During the restaurant war, what was the name of Steven Universe's Restaurant?
+<p>
+<input type="radio" name="question2a" value="CafeSteven"> 
+&nbsp; Cafe Steven &nbsp;
+<input type="radio" name="question2a" value="StevensRestaurant">
+&nbsp; Steven's Restaurant &nbsp;
+<input type="radio" name="question2a" value="Stevens">
+&nbsp; Steven's &nbsp;
+<input type="radio" name="question2a" value="CrystalPalace">
+&nbsp; Crystal Palace &nbsp;
+</p>
+
+
+<p class="questionNum">Question 3</p>
+What is the name of Steven's pet lion?
+<p>
+<input type="radio" name="question3a" value="kitty"> 
+&nbsp; Kitty &nbsp;
+<input type="radio" name="question3a" value="bowtie">
+&nbsp; BowTie &nbsp;
+<input type="radio" name="question3a" value="LionBlade">&nbsp; LionBlade &nbsp;
+<input type="radio" name="question3a" value="Lion">
+&nbsp; Lion &nbsp;
+</p>
+
+
+<p class="questionNum">Question 4</p>
+Out of the current main team of Gems, who is a fusion? 
+<p>
+<input type="radio" name="question4a" value="Garnet"> 
+&nbsp; Garnet &nbsp;
+<input type="radio" name="question4a" value="Pearl">
+&nbsp; Pearl &nbsp;
+<input type="radio" name="question4a" value="Amethyst">
+&nbsp; Amethyst &nbsp;
+<input type="radio" name="question4a" value="Peridot">
+&nbsp; Peridot &nbsp;
+</p>
+
+
+<p class="questionNum">Question 5</p>
+What's the name of Ronaldo's blog?
+<p>
+<input type="radio" name="question5a" value="RonaldosBeachBlog"> 
+&nbsp; Ronaldo's Beach Blog &nbsp;
+<input type="radio" name="question5a" value="WeirdBeachCity">
+&nbsp; Weird Beach City &nbsp;
+<input type="radio" name="question5a" value="StevenUniverse">
+&nbsp; Steven Universe &nbsp;
+<input type="radio" name="question5a" value="KeepBeachCityWeird">
+&nbsp; Keep Beach City Weird &nbsp;
+</p>
+
+
+<p class="questionNum">Question 6</p>
+Who is SourCream's father?
+<p>
+<input type="radio" name="question6a" value="Mayor"> 
+&nbsp; Mayor Dewy &nbsp;
+<input type="radio" name="question6a" value="Lars">
+&nbsp; Lars &nbsp;
+<input type="radio" name="question6a" value="YellowTail">
+&nbsp; YellowTail &nbsp;
+<input type="radio" name="question6a" value="None">
+&nbsp; None of these guys &nbsp;
+</p>
+
+
+<p class="questionNum">Question 7</p>
+What phony supermove did Steven think would make him stronger?
+<p>
+<input type="radio" name="question7a" value="RoundRoughPunch"> 
+&nbsp; Round Rough Punch &nbsp;
+<input type="radio" name="question7a" value="BoomerangBlade">
+&nbsp; Boomerang Blade &nbsp;
+<input type="radio" name="question7a" value="SteelSwiftSword">
+&nbsp; Steel Swift Sword &nbsp;
+<input type="radio" name="question7a" value="RosesCannonPunch">
+&nbsp; Rose's Cannon Punch &nbsp;
+</p>
+
+<p class="questionNum">Question 8</p>
+What healed Connie's vision?
+<p>
+<input type="radio" name="question8a" value="StevenLicks"> 
+&nbsp; Steven Licked Her Eyes! &nbsp;
+<input type="radio" name="question8a" value="Backwash">
+&nbsp; Steven's Backwash &nbsp;
+<input type="radio" name="question8a" value="MagicKiss">
+&nbsp; Steven's Magical Kiss &nbsp;
+<input type="radio" name="question8a" value="Fusion">
+&nbsp; Becomming a Fusion With Steven &nbsp;
+</p>
+<!-- End the Questions -->
+
+
+</form>
+
+	<p>
+	<button onclick="doneButtonClicked()">DONE!</button>
+	</p>
+<!-- End the container for the Quiz Page -->		
+</div>
+
+
+
+
+<!-- ************************************* -->
+
+<!-- Start the container for the Results Page -->	
+<div id="mainResults" style="display: none;">
+	<h1>Steven Universe Challenge</h1>
+<hr>
+<img src="assets/images/stevenend.jpg" width="400" id="stevenSplash">
+	<p id="results"></p>
+<p><button onclick="resetSUChallenge()">Play again?</button></p>
+<!-- End the container for the Results Page -->		
+</div>
+<!-- ************************************* -->
+
+<!-- End the main Container -->
+</div>
+
+<!-- Link to the Javascript -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>

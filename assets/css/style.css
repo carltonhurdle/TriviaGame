@@ -1,0 +1,39 @@
+body {
+	font-family: 'Caveat Brush', cursive;
+	background-image: url("../images/wp1812357.jpg");
+}
+
+#mainContainer {
+	width: 60%;
+	align-content: center;
+	text-align: center;
+	background-color: #FCB7A4;
+    margin: 0 auto;
+	opacity: 0.95;
+}
+
+.name {
+	font-family: 'Barrio', cursive;
+	margin-left: 150px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#mainSplash {
+	height: 40%;
+}
+
+#mainQuiz {
+	height: 100%;
+}
+
+.questionNum{
+	font-family: 'Barrio', cursive;
+	font-size: 14;
+}
+
+#mainResults { 
+	height: 60%;
+}
